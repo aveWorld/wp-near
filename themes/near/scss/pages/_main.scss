@@ -1,0 +1,396 @@
+//header
+
+.header {
+  min-height: 69px;
+  width: 100%;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+  }
+
+  &__slick {
+    z-index: 2;
+    padding: 15px 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+    align-items: center;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $black;
+    transition: 0.3s;
+
+    &:not(last-child) {
+      padding-right: 40px;
+    }
+
+    &:hover {
+      color: $lightRed;
+    }
+  }
+}
+
+.main__blog {
+  padding-top: 64px;
+}
+
+.main__blog__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.main__blog__buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading__bold {
+  font-weight: 700;
+}
+
+.main__blog__button {
+  margin: 0 5px;
+}
+
+.main__blog__posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main__guilds {
+  margin-top: 80px;
+}
+
+.main__near {
+  margin-top: 80px;
+  display: flex;
+  background-color: $blueGray;
+  border-radius: 20px;
+  padding: 30px 0 10px;
+}
+
+.main__near__left__img {
+  padding-left: 65px;
+}
+
+.main__near__right {
+  padding-left: 100px;
+}
+
+.main__near__right__content {
+  max-width: 600px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  padding-top: 22px;
+  padding-bottom: 40px;
+}
+
+.main__title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 49px 0;
+}
+
+.main__join__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  padding-top: 46px;
+}
+
+.main__join {
+  background-color: $blueGray;
+}
+
+.main__join__icons {
+  display: flex;
+  padding: 50px 0px 60px 0px;
+  justify-content: space-around;
+}
+
+.main__join__icon {
+  margin: 0 30px;
+  max-width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main__join__icon__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 28px;
+}
+
+.main__join__icon__svg {
+  text-align: center;
+}
+
+.main__bottom-block {
+  margin-top: 80px;
+}
+
+.main__guilds__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: $black;
+}
+
+.main__guilds__subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey;
+  text-align: center;
+  max-width: 600px;
+  margin: 9px auto 30px;
+}
+
+// guilds
+
+.guilds {
+  background: $white;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 1000px;
+}
+
+.guilds__header {
+  display: flex;
+  border-bottom: 1px solid $lightGreyBorder;
+  padding-bottom: 20px;
+}
+
+.guilds__header > div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.guilds__body {
+  display: flex;
+  border-bottom: 1px solid $lightGreyBorder;
+  align-items: center;
+}
+
+.guilds__body > div {
+  width: 20%;
+  padding: 21px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $black;
+}
+
+.guilds__wrapper {
+  padding: 23px 20px;
+}
+
+.guilds__header__column-name {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.guilds__btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main__guilds__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: $black;
+}
+
+.main__guilds__subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey;
+  text-align: center;
+  max-width: 600px;
+  margin: 9px auto 30px;
+}
+
+// bottom block
+
+.bottom-block {
+  background-color: $blueGray;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 55px 55px 18px 55px;
+}
+
+.bottom-block__right {
+  margin-left: 52px;
+}
+
+.bottom-block__right__text {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 50px;
+  padding-bottom: 40px;
+}
+
+// post-preview
+
+.post-preview {
+  max-width: 320px;
+  margin-top: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.post-preview__head__img {
+  width: 100%;
+}
+
+.post-preview__title {
+  font-size: 21px;
+  line-height: 25px;
+  padding-top: 21px;
+  color: $black;
+}
+
+.post-preview__container {
+  padding: 0 20px;
+}
+
+.post-preview__subtitle {
+  color: $grey;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 8px;
+}
+
+.post-preview__foot {
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post-preview__author {
+  display: flex;
+  align-items: center;
+}
+
+.post-preview__author__text {
+  padding-left: 10px;
+}
+
+.post-preview__author__name {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+}
+
+.post-preview__author__date {
+  font-size: 12px;
+  line-height: 14px;
+  color: $grey;
+  padding-top: 4px;
+}
+
+.post-preview__date__viewed {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey;
+}
+
+.post-preview__date__read {
+  color: $grey;
+  font-size: 12px;
+  line-height: 14px;
+  padding-top: 4px;
+}
+
+// footer
+.footer {
+  margin-top: 92px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__right {
+  background-color: $lightRed;
+  flex-basis: 50%;
+  border-radius: 20px 0px 0px 0px;
+  padding: 60px 0px 70px 122px;
+}
+
+.footer__left {
+  padding: 60px 72px 60px 0px;
+  margin-left: auto;
+}
+
+.footer__left__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey;
+  max-width: 449px;
+}
+
+.footer__left__text-padding {
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.footer__copyright {
+  padding-top: 40px;
+}
+
+.footer__right__community {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: $white;
+  padding-bottom: 12px;
+}
+
+.footer__right__icon {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.footer__right__icon__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white;
+  padding-left: 22px;
+}

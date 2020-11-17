@@ -27,11 +27,9 @@
 	<header id="masthead" class="site-header">
 		<div class="header__wrapper">
 			<div class="header__slick">
-            <a class="header__logo" href="/">
               <?php
 								the_custom_logo();
 							?>
-            </a>
             <nav class="header__nav">
               <a class="header__item" href="/near-guilds">NEAR Guilds</a>
               <a class="header__item" href="/about-guilds">About Guilds</a>
